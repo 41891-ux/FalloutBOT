@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fallout-BOT - Terminal de IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="terminal">
+        <!-- Header -->
+        <div class="terminal-header">
+            <div class="header-lights">
+                <div class="light red"></div>
+                <div class="light yellow"></div>
+                <div class="light green"></div>
+            </div>
+            <div class="header-title">ROBOCO INDUSTRIES - FALLOUT-BOT TERMINAL</div>
+            <div class="header-date" id="current-date"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="terminal-body">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="vault-boy">
+                    <div class="vault-symbol">⚡</div>
+                </div>
+                <div class="status-display">
+                    <div class="status-item">
+                        <span class="status-label">SISTEMA:</span>
+                        <span class="status-value online">ONLINE</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">IA CORE:</span>
+                        <span class="status-value">DEEPSEEK 3.1V</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">VERSION:</span>
+                        <span class="status-value">2.3.7</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Area -->
+            <div class="chat-area">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message system">
+                        <span class="timestamp">[INIT]</span>
+                        <span class="text">FALLOUT-BOT TERMINAL INICIADO</span>
+                    </div>
+                    <div class="message system">
+                        <span class="timestamp">[BOOT]</span>
+                        <span class="text">SISTEMA DE IA CARREGADO - DEEPSEEK 3.1V</span>
+                    </div>
+                    <div class="message system">
+                        <span class="timestamp">[READY]</span>
+                        <span class="text">DIGITE SUA MENSAGEM PARA INICIAR O DIALOGO</span>
+                    </div>
+                </div>
+
+                <!-- Input Area -->
+                <div class="input-area">
+                    <div class="input-prefix">FALLOUT-BOT&gt;</div>
+                    <input type="text" id="user-input" placeholder="DIGITE SUA MENSAGEM..." autocomplete="off">
+                    <button id="send-btn">ENVIAR</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="terminal-footer">
+            <div class="footer-text">ROBOCO INDUSTRIES © 2077 - TODOS OS DIREITOS RESERVADOS</div>
+            <div class="connection-status" id="connection-status">CONEXÃO: ESTABELECIDA</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
